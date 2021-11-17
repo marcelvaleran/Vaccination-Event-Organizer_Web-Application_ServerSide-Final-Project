@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+
+  padding:0px;
+  text-align: center;
+  font-size: 10px;
+}
+.content {
+	margin: 10px 0 0 0 ;
+	background-color: rgb(0,0,0,0.3);
+  padding:10px;
+  padding-left: 6px;
+  font-size: 10px;
+  border-radius : 20px;
+}
+.subContent {
+  margin-left: 13px;
+  background-color: rgb(0,0,0,0.3);
+  padding:5px;
+  padding-left: 40px;
+  float: left;
+  width: 48%;
+  height: auto;
+  font-size: 10px;
+  border-radius : 20px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  
+}
+
+/* Left and right column */
+.column.side {
+  width: 3%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 95%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius : 20px;
+  background-color: rgb(0,0,0,0.3);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 14px;
+  text-decoration: none;
+  font-family:monospace;
+  font-size : 12px;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.userInfo {
+  display: block;
+  color: white;
+  text-align: center;
+	height:100%;
+  padding: 16px 14px;
+  text-decoration: none;
+}
+h2{
+    font-family:monospace; 
+    font-size:28px; 
+    text-align: center; 
+    padding-bottom: 10px;
+}
+.button {
+    padding:5px 10px; 
+    background:#0099cc;
+    border:none;
+    cursor:pointer;
+    color:white;
+    margin-left: 0%;
+    border-radius: 30px; 
+    width: 90px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.button:hover{
+  background-color:#00ccff; 
+  transition-duration: 0.4s;
+}
+input[type=text] {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  color : white;
+  font-size: 12px;
+  width: 206px;
+  height: 20px;
+  margin-left: 2%;
+  text-align: left;
+  font-family:monospace;
+}
+label{
+  font-family: monospace;
+  font-size: 12px; 
+}
